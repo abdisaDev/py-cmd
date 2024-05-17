@@ -5,6 +5,8 @@ class Illustrate(cmd.Cmd):
     """ Overriding some of cmd methods """
 
     def cmdloop(self, intro) -> None:
+        """ just for test enji i know there are preloop and postloop hooks """
+        
         print("This custom text", intro)
         return super().cmdloop(intro)
     
