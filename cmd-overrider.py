@@ -6,7 +6,7 @@ class Illustrate(cmd.Cmd):
 
     def cmdloop(self, intro) -> None:
         """ just for test enji i know there are preloop and postloop hooks """
-        
+
         print("This custom text", intro)
         return super().cmdloop(intro)
     
@@ -22,6 +22,8 @@ class Illustrate(cmd.Cmd):
         return super().parseline(line)
     
     def onecmd(self, line: str) -> bool:
+        """ this method is called on every iteration (when cmdloop) called """
+        
         print("One CMD")
         return super().onecmd(line)
     
