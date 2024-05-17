@@ -8,7 +8,6 @@ class HelloWorld(cmd.Cmd):
         print("Hello :)")
 
     def do_EOF(self, args) -> bool:
-        print("Bye :(")
         return True
     
 if __name__ == "__main__":
