@@ -14,7 +14,6 @@ class HelloWorld(cmd.Cmd):
 if __name__ == "__main__":
     import sys
     input = open(sys.argv[1], "rt")
-    
     try:
         HelloWorld(stdin=input).cmdloop()
     finally:
